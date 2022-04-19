@@ -9,44 +9,38 @@
  */
 int _printf(const char *format, ...)
 {
-	va_list ap;
-	int i, j, flag;
+	int (*pfunc)(va_list, flags_t *);
+	const char *p;
+	va_list arguments;
+	flags_t flags = {0, 0, 0};
 
 	register int count = 0;
-	spec_p function[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"%", print_percentage}
-	};
-	va_start(ap, format);
 
+	va_start(arguments, format);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
-
-	for (i = 0; *(format + i); i++)
+	for (p = format; *p; p++)
 	{
-		if (flag == 0 && *(format + i) == '%')
+		if (*p == '%')
 		{
-			flag = 1;
-			continue;
-		}
-		if (flag == 1)
-		{
-			j = 0;
-			while (*(format + i) != *(function[j].symbol))
-				j++;
-			if (j < 3)
+			p++;
+			if (*p == '%')
 			{
-				function[j].func(ap);
-				count++;
+				count += _putchar('%');
+				continue;
 			}
-			flag = 0;
-			continue;
-		}
-		count += buf(format[i]);
+			while (get_flag(*p, &flags))
+				p++;
+			pfunc = get_print(*p);
+			count += (pfunc)
+				? pfunc(arguments, &flags)
+				: _printf("%%%c", *p);
+		} else
+			count += _putchar(*p);
 	}
-	va_end(ap);
+	_putchar(-1);
+	va_end(arguments);
 	return (count);
 }
