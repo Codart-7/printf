@@ -40,6 +40,8 @@ if the program runs successfully the return value is the number of characters pr
 
 **-main.h** - file containing all necessary prototypes for the project
 
+![flow-chart showing work-flow of creating the function] (https://drive.google.com/file/d/1g3l6myXH5Vic6dFfUwA4WXYDTipUZclu/view?usp=sharing)
+
 
 ## **Credits**
 -**Chukwuoma Chizoba**
