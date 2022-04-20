@@ -1,4 +1,4 @@
-#_printf(); this project is a requirement of the Alx software engineering pair programming task. it is a collaboration between Micheal Adisa and Chukwuoma Chizoba.
+#_printf(); this project is a requirement of the Alx software engineering pair programming task. it is a collaboration between Michael Adisa and Chukwuoma Chizoba.
 
 
 The function _printf() imitates the standard library function (stdio.h) printf();
@@ -32,16 +32,16 @@ the format specifier has the structure;
 if the program runs successfully the return value is the number of characters printed excluding the null byte
 
 
-##FILE FUNCTIONS
+##**FILE FUNCTIONS**
 
 
-**_printf.c** - custom printf function that performs format conversion and prints data
+**-_printf.c** - custom printf function that performs format conversion and prints data
 
 
-**main.h** - file containing all necessary prototypes for the project
+**-main.h** - file containing all necessary prototypes for the project
 
 
 ## **Credits**
-Chukwuoma Chizoba
+-**Chukwuoma Chizoba**
 
-Micheal Adisa
+-**Michael Adisa**
