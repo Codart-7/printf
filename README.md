@@ -40,7 +40,7 @@ if the program runs successfully the return value is the number of characters pr
 
 **-main.h** - file containing all necessary prototypes for the project
 
-![flow-chart showing work-flow of creating the function](./chizoba-page-1.drawio.png)
+![flow-chart showing work-flow of creating the function])(chizoba-page-1.drawio.png)
 
 
 ## **Credits**
