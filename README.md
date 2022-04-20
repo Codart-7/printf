@@ -32,7 +32,7 @@ the format specifier has the structure;
 if the program runs successfully the return value is the number of characters printed excluding the null byte
 
 
-##**FILE FUNCTIONS**
+**##FILE FUNCTIONS**
 
 
 **-_printf.c** - custom printf function that performs format conversion and prints data
@@ -40,7 +40,7 @@ if the program runs successfully the return value is the number of characters pr
 
 **-main.h** - file containing all necessary prototypes for the project
 
-![flow-chart showing work-flow of creating the function](https://drive.google.com/file/d/1g3l6myXH5Vic6dFfUwA4WXYDTipUZclu/view?usp=sharing)
+![flow-chart showing work-flow of creating the function](./chizoba-page-1.drawio.png)
 
 
 ## **Credits**
